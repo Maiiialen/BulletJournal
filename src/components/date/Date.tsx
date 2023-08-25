@@ -6,12 +6,13 @@ import { DatePicker } from '@mui/x-date-pickers/DatePicker';
 
 const Date = () => {
   const [value, setValue] = useState<Dayjs | null>(dayjs('2022-04-17'));
-  console.log(value?.year)
+  // console.log(value?.format("DD"))
 
   return (
     <LocalizationProvider dateAdapter={AdapterDayjs}>
       <DatePicker
         label="Date"
+        defaultValue={value}
         onChange={(newValue: Dayjs | null) => setValue(newValue)} />
     </LocalizationProvider>
   )

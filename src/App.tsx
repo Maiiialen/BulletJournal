@@ -8,6 +8,7 @@ function App() {
       alignItems: "center",
       justifyContent: "center"
     }}>
+      <Box></Box>
       <Page />
     </Box>
   )

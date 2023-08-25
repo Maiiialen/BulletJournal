@@ -1,17 +1,21 @@
-import { Box } from '@mui/material'
-import Page from './components/page/Page'
+import { Box } from "@mui/material";
+import Page from "./components/page/Page";
 
 function App() {
   return (
-    <Box sx={{
-      height: "100vh", width: "100vw", display: "flex",
-      alignItems: "center",
-      justifyContent: "center"
-    }}>
+    <Box
+      sx={{
+        height: "100vh",
+        width: "100vw",
+        display: "flex",
+        alignItems: "center",
+        justifyContent: "center",
+      }}
+    >
       <Box></Box>
       <Page />
     </Box>
-  )
+  );
 }
 
-export default App
+export default App;
